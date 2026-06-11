@@ -12,8 +12,8 @@ img {
 }
 
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
 ul {
@@ -21,7 +21,7 @@ ul {
 }
 
 button {
-  border: none;
+  border: 0;
   background: none;
   cursor: pointer;
   font-family: inherit;
@@ -33,7 +33,7 @@ html {
 
 body {
   font-family: "Rubik", sans-serif;
-  background: #FFFFFF;
+  background: #fff;
   color: #4F5665;
   overflow-x: hidden;
 }
@@ -61,10 +61,10 @@ h4 {
 }
 
 .section-title h2 {
-  font-size: 35px;
-  line-height: 1.4;
-  font-weight: 500;
   margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .section-title p {
@@ -74,9 +74,9 @@ h4 {
 }
 
 .header {
-  padding: 45px 0;
   position: relative;
   z-index: 1001;
+  padding: 45px 0;
 }
 
 .header__wrapper {
@@ -91,9 +91,9 @@ h4 {
   gap: 10px;
 }
 .logo span {
+  color: #0B132A;
   font-size: 20px;
   font-weight: 700;
-  color: #0B132A;
 }
 
 .logo img {
@@ -127,13 +127,13 @@ h4 {
 }
 
 .sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 150px;
   height: 45px;
   border: 1px solid #F53838;
   border-radius: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #F53838;
   font-weight: 700;
   transition: 0.3s ease;
@@ -141,7 +141,7 @@ h4 {
 
 .sign-up:hover {
   background: #F53838;
-  color: white;
+  color: #fff;
 }
 
 .burger {
@@ -170,13 +170,14 @@ h4 {
 
 .hero__image img {
   width: 100%;
+  animation: float 5s ease-in-out infinite;
 }
 
 .hero h1 {
-  font-size: 50px;
-  line-height: 1.4;
-  font-weight: 500;
   margin-bottom: 20px;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .hero h1 span {
@@ -184,28 +185,24 @@ h4 {
 }
 
 .hero p {
-  line-height: 1.9;
   margin-bottom: 50px;
+  line-height: 1.9;
 }
 
 .hero-btn {
   width: 250px;
   height: 60px;
   background: #F53838;
-  color: white;
   border-radius: 10px;
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
-  box-shadow: 0px 20px 54px rgba(245, 56, 56, 0.35);
+  box-shadow: 0 20px 54px rgba(245, 56, 56, 0.35);
   transition: 0.3s ease;
 }
 
 .hero-btn:hover {
   transform: translateY(-4px);
-}
-
-.hero__image img {
-  animation: float 5s ease-in-out infinite;
 }
 
 @keyframes float {
@@ -224,13 +221,13 @@ h4 {
 }
 
 .stats__wrapper {
-  background: white;
-  border-radius: 10px;
-  box-shadow: 0px 30px 60px rgba(13, 16, 37, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 35px 70px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 30px 60px rgba(13, 16, 37, 0.08);
 }
 
 .stat {
@@ -240,13 +237,13 @@ h4 {
 }
 
 .stat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 55px;
   height: 55px;
   background: rgba(245, 56, 56, 0.1);
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .stat-icon img {
@@ -254,9 +251,9 @@ h4 {
 }
 
 .stat h3 {
+  margin-bottom: 5px;
   font-size: 25px;
   font-weight: 700;
-  margin-bottom: 5px;
 }
 
 .stat p {
@@ -290,15 +287,15 @@ h4 {
 }
 
 .features__content h2 {
-  font-size: 35px;
-  line-height: 1.4;
-  font-weight: 500;
   margin-bottom: 20px;
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .features__content p {
-  line-height: 1.9;
   margin-bottom: 25px;
+  line-height: 1.9;
 }
 
 .features__content ul {
@@ -320,14 +317,14 @@ h4 {
 }
 
 .pricing {
-  background: linear-gradient(180deg, #FFFFFF 0%, #F8F8F8 100%);
+  background: linear-gradient(180deg, #fff 0%, #F8F8F8 100%);
 }
 
 .plans {
-  margin-top: 60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 50px;
+  margin-top: 60px;
 }
 
 .plan {
@@ -335,11 +332,9 @@ h4 {
   border: 2px solid #DDDDDD;
   border-radius: 10px;
   padding: 60px 40px 40px;
-  min-height: 760px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: 0.3s ease;
 }
 
 .plan:hover {
@@ -352,29 +347,29 @@ h4 {
   box-shadow: 0 25px 60px rgba(245, 56, 56, 0.15);
 }
 
-.plan > img {
+.plan img {
   width: 145px;
   margin-bottom: 30px;
 }
 
 .plan h3 {
-  font-size: 18px;
   margin-bottom: 30px;
+  font-size: 18px;
 }
 
 .plan ul {
-  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  margin-bottom: auto;
+  width: fit-content;
+  margin: 0 auto;
+  flex: 1;
 }
 
 .plan li {
   display: flex;
-  align-items: center;
   gap: 12px;
   font-size: 14px;
+  align-items: flex-start;
 }
 
 .plan li img {
@@ -385,12 +380,12 @@ h4 {
 .plan-bottom {
   width: 100%;
   text-align: center;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .plan-bottom h4 {
-  font-size: 25px;
   margin-bottom: 20px;
+  font-size: 25px;
 }
 
 .plan-bottom span {
@@ -401,10 +396,10 @@ h4 {
 .plan-btn {
   width: 180px;
   height: 45px;
+  background: transparent;
   border: 2px solid #F53838;
   border-radius: 50px;
   color: #F53838;
-  background: transparent;
   font-size: 16px;
   font-weight: 700;
   transition: 0.3s ease;
@@ -412,12 +407,12 @@ h4 {
 
 .plan-btn:hover {
   background: #F53838;
-  color: white;
+  color: #fff;
 }
 
 .active-btn {
   background: #F53838;
-  color: white;
+  color: #fff;
   box-shadow: 0 15px 40px rgba(245, 56, 56, 0.35);
 }
 
@@ -452,8 +447,8 @@ h4 {
 }
 
 .slider-wrapper {
-  overflow: hidden;
   margin-top: 60px;
+  overflow: hidden;
 }
 
 .slider-track {
@@ -464,9 +459,9 @@ h4 {
 
 .slide {
   min-width: calc((100% - 80px) / 3);
+  padding: 30px;
   border: 2px solid #DDDDDD;
   border-radius: 10px;
-  padding: 30px;
   transition: 0.3s ease;
 }
 
@@ -495,8 +490,8 @@ h4 {
 }
 
 .person h4 {
-  color: #0B132A;
   margin-bottom: 5px;
+  color: #0B132A;
 }
 
 .person p {
@@ -518,10 +513,10 @@ h4 {
 }
 
 .slider-controls {
-  margin-top: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 60px;
 }
 
 .dots {
@@ -540,8 +535,8 @@ h4 {
 
 .dot.active {
   width: 45px;
-  border-radius: 30px;
   background: #F53838;
+  border-radius: 30px;
 }
 
 .arrows {
@@ -550,12 +545,12 @@ h4 {
 }
 
 .arrows button {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
   transition: 0.3s ease;
 }
 
@@ -563,11 +558,19 @@ h4 {
   width: 22px;
 }
 
-.prev {
+.arrows button {
+  width: 60px;
+  height: 60px;
   border: 2px solid #F53838;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
 }
 
-.next {
+.arrows button:hover {
   background: #F53838;
   box-shadow: 0 15px 40px rgba(245, 56, 56, 0.35);
 }
@@ -578,27 +581,27 @@ h4 {
 }
 
 .subscribe-box {
-  background: white;
-  border-radius: 10px;
-  padding: 60px 70px;
-  box-shadow: 0 30px 80px rgba(13, 16, 37, 0.08);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 60px 70px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 30px 80px rgba(13, 16, 37, 0.08);
 }
 
 .subscribe-content h2 {
+  margin-bottom: 20px;
   font-size: 35px;
   line-height: 1.4;
-  margin-bottom: 20px;
 }
 
 .subscribe-btn {
   width: 250px;
   height: 60px;
   background: #F53838;
-  color: white;
   border-radius: 10px;
+  color: #fff;
   font-size: 16px;
   font-weight: 700;
   box-shadow: 0 20px 54px rgba(245, 56, 56, 0.35);
@@ -610,10 +613,9 @@ h4 {
 }
 
 .footer {
-  background: #F8F8F8;
   margin-top: -120px;
-  padding-top: 180px;
-  padding-bottom: 80px;
+  padding: 180px 0 80px;
+  background: #F8F8F8;
 }
 
 .footer-wrapper {
@@ -628,8 +630,8 @@ h4 {
 
 .footer-about p {
   max-width: 340px;
-  line-height: 1.9;
   margin-bottom: 30px;
+  line-height: 1.9;
 }
 
 .socials {
@@ -639,13 +641,13 @@ h4 {
 }
 
 .socials a {
-  width: 35px;
-  height: 35px;
-  background: white;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
   color: #F53838;
   font-weight: 700;
   box-shadow: 0 10px 30px rgba(13, 16, 37, 0.08);
@@ -682,11 +684,15 @@ h4 {
   }
   .subscribe-box {
     flex-direction: column;
-    text-align: center;
     gap: 40px;
+    text-align: center;
+  }
+  .slider-track {
+    gap: 0;
   }
   .slide {
     min-width: 100%;
+    flex: 0 0 100%;
   }
 }
 @media (max-width: 768px) {
@@ -696,15 +702,22 @@ h4 {
   }
   .burger {
     display: block;
-    font-size: 30px;
     color: #0B132A;
+    font-size: 30px;
   }
   .hero h1 {
     font-size: 38px;
   }
   .stats__wrapper {
-    flex-direction: column;
-    gap: 30px;
+    padding: 20px;
+  }
+  .stat {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .divider {
+    width: 100%;
+    height: 1px;
   }
   .divider {
     width: 100%;
@@ -741,17 +754,17 @@ h4 {
     position: absolute;
     top: 90px;
     right: 15px;
-    width: 220px;
-    background: white;
     flex-direction: column;
+    width: 220px;
     padding: 25px;
+    background: #fff;
     border-radius: 12px;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
     z-index: 1000;
   }
   .nav.active a {
+    color: #0B132A;
     font-size: 18px;
     font-weight: 500;
-    color: #0B132A;
   }
 }/*# sourceMappingURL=main.css.map */
