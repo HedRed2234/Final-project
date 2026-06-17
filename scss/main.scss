@@ -737,12 +737,12 @@ h4 {
   }
 
   .slider-track {
-    gap: 0;
+    gap: 30px;
   }
 
   .slide {
-    min-width: 100%;
-    flex: 0 0 100%;
+    min-width: clamp(300px, 90%, 400px);
+    flex: 0 0 clamp(300px, 90%, 400px);
   }
 }
 
@@ -765,6 +765,7 @@ h4 {
   }
 
   .stats__wrapper {
+    flex-direction: column;
     padding: 20px;
   }
 
