@@ -754,6 +754,20 @@ h4 {
     display: none;
   }
 
+  .nav.active {
+    display: flex !important;
+    position: absolute;
+    top: 90px;
+    right: 15px;
+    flex-direction: column;
+    width: 220px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.1);
+    z-index: 1000;
+  }
+
   .burger {
     display: block;
     color: $dark;
@@ -766,12 +780,14 @@ h4 {
 
   .stats__wrapper {
     flex-direction: column;
+    max-width: 350px;
+    margin: 0 auto;
     padding: 20px;
   }
 
   .stat {
-  width: 100%;
-  justify-content: flex-start;
+    width: 100%;
+    justify-content: flex-start;
   }
 
   .divider {
@@ -795,6 +811,12 @@ h4 {
   .slider-controls {
     flex-direction: column;
     gap: 30px;
+  }
+
+  .plan {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
   }
 }
 

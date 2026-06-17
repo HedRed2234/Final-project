@@ -108,5 +108,24 @@ nextBtn?.addEventListener('mouseleave', () => {
   nextBtn.querySelector('img').src = 'icons/arrowRedRight.png';
 });
 
+let startX = 0;
+let endX = 0;
+
+track?.addEventListener('touchstart', e => {
+  startX = e.changedTouches[0].clientX;
+});
+
+track?.addEventListener('touchend', e => {
+  endX = e.changedTouches[0].clientX;
+
+  if (startX - endX > 50) {
+    nextSlide();
+  }
+
+  if (endX - startX > 50) {
+    prevSlide();
+  }
+});
+
 startAutoSlide();
 updateSlider();
